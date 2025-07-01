@@ -11,10 +11,37 @@ aside {
     background-color: var(--shape-background);
 
     & .aside-container {
-        max-width: 21rem;
+        max-width: 25rem;
+        min-height: 45.5rem;
         margin-left: auto;
-        
+
+        background: url(../assets/Background.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+
+        border: 1px white solid;
+
+        & .title {
+            padding: 2rem;
+            gap: 1rem;
+
+            & .text {
+                gap: 0.25rem;
+
+                & h1 {
+                    font: var(--logo);
+                    color: var(--pink);
+                }
+
+                & p {
+                    font: var(--body-md);
+                    color: var(--text-heading);
+                }
+            }
+        }
     }
+
 }
 
 main {
