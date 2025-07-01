@@ -12,16 +12,25 @@ aside {
         min-height: 45.5rem;
         margin-left: auto;
 
+        background-color: var(--shape-background);
+        border: 1.25rem solid var(--shape-background);
+        border-radius: 0.75rem;
+        overflow: hidden;
         position: relative;
+        z-index: 0;
+        
         & .img-background {
             background-image: url(../assets/Background.jpg);
+            background-size: cover;
+            background-position: center;
             border-radius: 0.75rem;
-            width: 25rem;
-            height: 45.5rem;
 
+            width: 100%;
+            height: 100%;
             position: absolute;
             inset: 0;
             z-index: -1;
+            
         }
 
         & .title {
