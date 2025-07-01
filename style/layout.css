@@ -1,26 +1,29 @@
 #app {
     display: grid;
     grid-template-columns: 35.94% 64.06%;
-
+    
     height: 100vh;
     overflow: hidden;
 }
 
 aside {
-    padding: 1.25rem;
-    background-color: var(--shape-background);
-
-    & .aside-container {
+    & #aside-container {
         max-width: 25rem;
         min-height: 45.5rem;
         margin-left: auto;
 
-        background: url(../assets/Background.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-        object-fit: cover;
+        position: relative;
 
-        border: 1px white solid;
+        & .img-background {
+            background-image: url(../assets/Background.jpg);
+            border-radius: 0.75rem;
+            width: 25rem;
+            height: 45.5rem;
+
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+        }
 
         & .title {
             padding: 2rem;
@@ -40,16 +43,14 @@ aside {
                 }
             }
         }
-    }
-
+    } 
 }
 
 main {
     overflow: auto;
-    padding: 1.25rem;
-    background-color: var(--shape-background);
-
-    & .main-container {
-        max-width: 35rem;
+    padding: 1.25rem 1.25rem 1.25rem 0;
+    
+    & #main-container {
+        max-width: 51.25rem;
     }
 }
