@@ -15,7 +15,9 @@ aside {
 
         background-color: var(--shape-background);
         border: 1.25rem solid var(--shape-background);
-        border-radius: 0.75rem;
+        border-right: 0;
+        border-radius: 0.75rem 0 0 0.75rem; /*Unindo a borda do aside + main*/
+
         overflow: hidden;
         position: relative;
         z-index: 0;
@@ -57,9 +59,19 @@ aside {
 
 main {
     overflow: auto;
-    padding: 1.25rem 1.25rem 1.25rem 0;
-    
+
     & #main-container {
         max-width: 51.25rem;
+        padding: 5rem 8.1rem;
+
+        background-color: var(--shape-body);
+        border: 1.25rem solid var(--shape-background);
+        border-radius: 0 0.75rem 0.75rem 0.75rem; /*Unindo a borda do main + aside*/
+
+        & header h1 {
+            font: var(--heading-md);
+            color: var(--text-heading);
+
+        }
     }
 }

@@ -47,10 +47,15 @@
 
 body {
     overflow: hidden;
-    color: var(--text-heading);
+    font: var(--body-sm);
+    color: var(--text-body);
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+fieldset {
+    border: none;
 }
