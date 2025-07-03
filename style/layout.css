@@ -62,11 +62,18 @@ main {
 
     & #main-container {
         max-width: 51.25rem;
-        padding: 5rem 8.1rem;
 
-        background-color: var(--shape-body);
+        background-color: var(--shape-background);
         border: 1.25rem solid var(--shape-background);
         border-radius: 0 0.75rem 0.75rem 0.75rem; /*Unindo a borda do main + aside*/
+
+        & .main-content {
+            max-width: 51.25rem;
+            padding: 5rem 8.1rem;
+
+            background-color: var(--shape-body);
+            border-radius: 0.75rem;
+        }
 
         & header h1 {
             font: var(--heading-md);
