@@ -1,0 +1,15 @@
+input {
+    all: unset;
+    box-sizing: border-box;
+    font: var(--body-md);
+    padding: 0.8rem 1rem;
+    width: 100%;
+
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+}
+
+input::placeholder {
+    color: var(--input-placeholder);
+}

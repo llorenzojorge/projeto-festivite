@@ -1,6 +1,5 @@
 @import url(fieldset/index.css);
 
-/* Estilo global dos titulos(legend) dos fieldset's */
 form {
     margin-top: 2.5rem;
 }
@@ -22,6 +21,3 @@ form {
         color: var(--text-heading);
     }
 }
-
-
-/* Imagem especifica do primeiro fieldset */

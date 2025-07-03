@@ -1,3 +1,13 @@
 .grid {
     display: grid;
 }
+
+/* Gap de 24px entre o legend-title e os inputs */
+.gap-24 {
+    gap: 1.5rem;
+}
+
+/* Gap de 12px entre o label e input */
+.gap-12 {
+    gap: 0.75rem;
+}

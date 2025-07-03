@@ -13,7 +13,7 @@
     --heading-md: 700 1.75rem var(--font-baloo);
     --heading-sm: 700 1.1rem var(--font-baloo);
     --body-md: 300 1rem var(--font-open-sans);
-    --body-sm: 600 0.8rem var(--font-open-sans);
+    --body-sm: 300 0.8rem var(--font-open-sans);
     --body-xs: 600 0.75rem var(--font-open-sans);
 
     --brand-light: #59B2FF;
