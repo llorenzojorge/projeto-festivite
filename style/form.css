@@ -1,0 +1,27 @@
+@import url(fieldset/index.css);
+
+/* Estilo global dos titulos(legend) dos fieldset's */
+form {
+    margin-top: 2.5rem;
+}
+
+.legend-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    & .img-legend {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        object-fit: cover;
+    }
+
+    legend {
+        font: var(--heading-sm);
+        color: var(--text-heading);
+    }
+}
+
+
+/* Imagem especifica do primeiro fieldset */
