@@ -8,8 +8,13 @@ input {
     background-color: var(--input-base);
     border: 1px solid var(--input-stroke);
     border-radius: 0.5rem;
+
+    &::placeholder {
+        color: var(--input-placeholder);
+    }
 }
 
-input::placeholder {
-    color: var(--input-placeholder);
+input:focus {
+    border-color: var(--brand-light);
+    color: var(--text-heading);
 }
