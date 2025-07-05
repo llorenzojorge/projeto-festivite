@@ -22,7 +22,7 @@ form {
     }
 }
 
-.input-wrapper label, .textarea-wrapper label {
+.input-wrapper label, .textarea-wrapper label, .label {
     display: block;
     margin-bottom: 0.75rem;
 }
