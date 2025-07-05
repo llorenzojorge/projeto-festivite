@@ -2,9 +2,25 @@
     display: grid;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
 /* Gap de 24px entre o legend-title e os inputs */
 .gap-24 {
     gap: 1.5rem;
+}
+
+.gap-16 {
+    gap: 1rem;
 }
 
 /* Gap de 12px entre o label e input */

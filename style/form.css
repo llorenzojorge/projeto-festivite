@@ -21,3 +21,8 @@ form {
         color: var(--text-heading);
     }
 }
+
+.input-wrapper label, .textarea-wrapper label {
+    display: block;
+    margin-bottom: 0.75rem;
+}

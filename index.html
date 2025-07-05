@@ -17,13 +17,13 @@
             <header id="aside-container">
                 <div class="title grid">
                     <img src="assets/Logo.svg" alt="Logo Festivite" class="logo">
-    
+
                     <div class="text grid">
                         <h1>Festivite</h1>
                         <p>Crie um convite digital para o seu evento</p>
                     </div>
                 </div>
-                
+
                 <div class="img-background"></div>
             </header>
         </aside>
@@ -34,7 +34,7 @@
                     <header>
                         <h1>Crie seu convite</h1>
                     </header>
-        
+
                     <form enctype="multipart/form-data">
                         <fieldset class="about grid gap-24">
                             <div class="legend-title">
@@ -42,11 +42,38 @@
                                 <legend>Sobre o evento</legend>
                             </div>
 
-                            <div class="about-inputs">
-                                <div class="input-wrapper grid gap-12">
+                            <div class="about-inputs grid gap-16">
+                                <div class="input-wrapper">
                                     <label for="titulo">Título</label>
                                     <input type="text" id="titulo" name="titulo" placeholder="Nome do evento">
                                 </div>
+
+                                <div class="input-wrapper">
+                                    <label for="inicio">Início</label>
+                                    <input type="date" id="inicio" name="inicio" placeholder="Nome do evento">
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <label for="fim">Fim</label>
+                                    <input type="date" id="fim" name="fim" placeholder="Nome do evento">
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <label for="titulo">Tipo</label>
+                                    <input type="" id="titulo" name="titulo" placeholder="Nome do evento">
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <label for="local">Local</label>
+                                    <input type="text" id="local" name="local" placeholder="Link ou endereço">
+                                </div>
+
+                                <div class="textarea-wrapper">
+                                    <label for="description">Descrição</label>
+                                    <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" cols="30" rows="5"></textarea>
+                                </div>
+
+
                             </div>
                         </fieldset>
                     </form>
