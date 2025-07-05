@@ -48,25 +48,41 @@
                                     <input type="text" id="titulo" name="titulo" placeholder="Nome do evento">
                                 </div>
 
-                                <div class="input-wrapper">
-                                    <label for="inicio">Início</label>
-                                    <input type="date" id="inicio" name="inicio" placeholder="Nome do evento">
+                                <div class="flex gap-16">
+                                    <div class="input-wrapper flex-2">
+                                        <label for="inicio">Início</label>
+                                        <input type="date" id="inicio" name="inicio">
+                                    </div>
+    
+                                    <div class="input-wrapper flex-1">
+                                        <label for="fim">Fim</label>
+                                        <input type="date" id="fim" name="fim">
+                                    </div>
                                 </div>
 
-                                <div class="input-wrapper">
-                                    <label for="fim">Fim</label>
-                                    <input type="date" id="fim" name="fim" placeholder="Nome do evento">
+                                <div class="flex gap-16">
+                                    <div class="radio-wrapper">
+                                        <span class="label-copia">Tipo</span>
+
+                                        <div class="radio-inner">
+                                            <div class="img-radio"></div>
+                                            <label for="presencial">Presencial</label>
+                                            <input type="radio" id="presencial" name="titulo" value="presencial">
+                                        </div>
+
+                                        <div class="radio-inner">
+                                            <div class="img-radio"></div>
+                                            <label for="online">Online</label>
+                                            <input type="radio" id="online" name="titulo" value="online">
+                                        </div>
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <label for="local">Local</label>
+                                        <input type="text" id="local" name="local" placeholder="Link ou endereço">
+                                    </div>
                                 </div>
 
-                                <div class="input-wrapper">
-                                    <label for="titulo">Tipo</label>
-                                    <input type="" id="titulo" name="titulo" placeholder="Nome do evento">
-                                </div>
-
-                                <div class="input-wrapper">
-                                    <label for="local">Local</label>
-                                    <input type="text" id="local" name="local" placeholder="Link ou endereço">
-                                </div>
 
                                 <div class="textarea-wrapper">
                                     <label for="description">Descrição</label>
