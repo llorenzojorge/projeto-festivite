@@ -1,12 +1,19 @@
 #box-radio {
+    padding: 4px;
 
     background-color: var(--input-base);
     border: 1px solid var(--input-stroke);
     border-radius: 0.5rem;
 
     & .radio-inner {
+        justify-content: center;
         align-items: center;
+        gap: 0.5rem;
+        padding: 0.67rem;
 
+        & label {
+
+        }
     }
 
     & .img-radio {
@@ -44,9 +51,9 @@
     border-radius: 0.3rem;
 
     & input {
-        /* all: unset; */
-        /* position: absolute; */
-        /* inset: 0; */
+        all: unset;
+        position: absolute;
+        inset: 0;
     }
 
     &:hover {
@@ -55,11 +62,8 @@
 
     &:has(:checked) {
         background-color: var(--shape-button);
-        font-weight: 600;
+        font-weight: 500;
         color: var(--text-heading);
     }
 }
 
-#teste {
-    border: 1px solid white;
-}
