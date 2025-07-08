@@ -1,3 +1,37 @@
 .personalization .img-legend {
     background-image: url(../../assets/icons/paintbrush-vertical.svg);
 }
+
+.personalization-inputs span {
+    display: block;
+    margin-bottom: 1rem;
+    color: #FFF;
+}
+
+.colors-itens {
+    & label {
+        cursor: pointer;
+        position: relative;
+
+        &:hover .circle{
+            border-color: var(--shape-hover);
+        }
+    }
+    
+    & .circle {
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        border: 6px solid var(--shape-button);
+        background-color: white;
+    }
+
+    & input[type="radio"] {
+        display: none;
+    }
+
+    & input[type="radio"]:checked + .circle {
+        border-color: var(--brand-light);
+    }
+}
