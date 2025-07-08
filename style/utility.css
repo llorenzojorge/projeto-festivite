@@ -14,6 +14,11 @@
     flex: 2;
 }
 
+/* Gap de 48px entre fieldeset's */
+.gap-48 {
+    gap: 3rem;
+}
+
 /* Gap de 24px entre o legend-title e os inputs */
 .gap-24 {
     gap: 1.5rem;
