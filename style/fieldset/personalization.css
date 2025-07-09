@@ -9,29 +9,30 @@
 }
 
 .colors-itens {
-    & label {
-        cursor: pointer;
-        position: relative;
-
-        &:hover .circle{
-            border-color: var(--shape-hover);
-        }
-    }
-    
     & .circle {
-        position: absolute;
+        position: relative;
+        cursor: pointer;
+        background-color: var(--shape-button);
+
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 50%;
-        border: 6px solid var(--shape-button);
-        background-color: white;
-    }
+        border: 2px solid var(--brand-light);
 
-    & input[type="radio"] {
-        display: none;
-    }
+        &:hover {
+            background-color: var(--shape-hover);
+        }
 
-    & input[type="radio"]:checked + .circle {
-        border-color: var(--brand-light);
+        & input[type="radio"] {
+            all: unset;
+            position: absolute;
+            top: 4px;
+            left: 5px;
+
+            background-color: white;
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 50%;
+        }
     }
 }
