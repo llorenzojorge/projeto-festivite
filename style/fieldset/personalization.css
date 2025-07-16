@@ -9,6 +9,9 @@
 }
 
 .colors-itens {
+    display: flex;
+    gap: 0.75rem;
+
     .circle {
         position: relative;
         
@@ -48,39 +51,6 @@
         inset: 0;
     }
 
-    input[type="radio"]:checked .circle {
-        border-color: var(--brand-light);
-    }
+    /* Configuração de cores de cada label */
 
-
-    
-    /* & .circle {
-        position: relative;
-        cursor: pointer;
-        background-color: var(--shape-button);
-
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50%;
-        border: 2px solid var(--brand-light);
-
-        &:hover {
-            background-color: var(--shape-hover);
-        }
-
-        & input[type="radio"] {
-            all: unset;
-            display: block;
-            margin: auto;
-            margin-top: 3.5px;
-            position: absolute; 
-            top: 4px; 
-            left: 5px; 
-
-            background-color: white;
-            width: 1.75rem;
-            height: 1.75rem;
-            border-radius: 50%;
-        }
-    } */
 }
