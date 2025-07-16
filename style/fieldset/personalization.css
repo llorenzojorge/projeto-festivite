@@ -9,7 +9,52 @@
 }
 
 .colors-itens {
-    & .circle {
+    .circle {
+        position: relative;
+        
+        width: 2.5rem;
+        height: 2.5rem;
+        
+        border-radius: 50%;
+        background-color: var(--shape-button);
+        border: 2px solid transparent;
+    }
+    
+    .circle:hover {
+        background-color: var(--shape-hover);
+    }
+
+    .circle:has(input[type="radio"]:checked) {
+        border-color: var(--brand-light);
+    }
+
+    label {
+        position: absolute;
+        top: calc(50% - 1.75rem/2);
+        left: calc(50% - 1.75rem/2);
+
+        width: 1.75rem;
+        height: 1.75rem;
+
+        border-radius: 50%;
+        background-color: var(--shape-background);
+    }
+
+    input[type="radio"] {
+        all: unset;
+        cursor: pointer;
+
+        position: absolute;
+        inset: 0;
+    }
+
+    input[type="radio"]:checked .circle {
+        border-color: var(--brand-light);
+    }
+
+
+    
+    /* & .circle {
         position: relative;
         cursor: pointer;
         background-color: var(--shape-button);
@@ -25,14 +70,17 @@
 
         & input[type="radio"] {
             all: unset;
-            position: absolute;
-            top: 4px;
-            left: 5px;
+            display: block;
+            margin: auto;
+            margin-top: 3.5px;
+            position: absolute; 
+            top: 4px; 
+            left: 5px; 
 
             background-color: white;
             width: 1.75rem;
             height: 1.75rem;
             border-radius: 50%;
         }
-    }
+    } */
 }
