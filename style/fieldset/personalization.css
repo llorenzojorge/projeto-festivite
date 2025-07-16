@@ -40,7 +40,6 @@
         height: 1.75rem;
 
         border-radius: 50%;
-        background-color: var(--shape-background);
     }
 
     input[type="radio"] {
@@ -50,7 +49,49 @@
         position: absolute;
         inset: 0;
     }
-
+    
     /* Configuração de cores de cada label */
+    .brand-color {
+        background-color: var(--brand-light);
+    }
+    
+    .navy {
+        background-color: var(--navy);
+    }
 
+    .purple {
+        background-color: var(--purple);
+    }
+
+    .fuschia {
+        background-color: var(--fuschia);
+    }
+
+    .pink {
+        background-color: var(--pink);
+    }
+
+    .danger {
+        background-color: var(--danger);
+    }
+
+    .orange {
+        background-color: var(--orange);
+    }
+
+    .yellow {
+        background-color: var(--yellow);
+    }
+
+    .lime {
+        background-color: var(--lime);
+    }
+
+    .green {
+        background-color: var(--green);
+    }
+
+    .cyan {
+        background-color: var(--cyan);
+    }
 }
