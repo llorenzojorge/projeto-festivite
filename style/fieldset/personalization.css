@@ -95,3 +95,7 @@
         background-color: var(--cyan);
     }
 }
+
+.theme > span {
+    margin-top: 1.75rem;
+}
