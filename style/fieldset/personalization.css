@@ -99,3 +99,48 @@
 .theme > span {
     margin-top: 1.75rem;
 }
+
+.theme-radio {
+    position: relative;
+    max-width: 8.4rem;
+    padding-block: .25rem .5rem;
+    padding-inline: .25rem;
+
+    display: grid;
+    gap: .5rem;
+    justify-content: center;
+    text-align: center;
+
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    background-color: var(--shape-button);
+
+    &:hover {
+        background-color: var(--shape-hover);
+    }
+
+    &:has(input[type="radio"]:checked) {
+        background-color: var(--shape-button);
+        border: 2px solid var(--brand-light);
+    }
+
+    img {
+        max-height: 4rem;
+        border-radius: 0.25rem;
+        object-fit: cover;
+    }
+
+    label {
+        font: var(--body-sm);
+        color: var(--text-heading);
+        font-weight: 400;
+    }
+
+    input {
+        all: unset;
+        position: absolute;
+        inset: 0;
+        
+        cursor: pointer;
+    }
+}
