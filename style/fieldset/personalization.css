@@ -96,6 +96,12 @@
     }
 }
 
+.theme-itens {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .theme > span {
     margin-top: 1.75rem;
 }
@@ -111,7 +117,7 @@
     justify-content: center;
     text-align: center;
 
-    border: 1px solid var(--input-stroke);
+    border: 2px solid var(--input-stroke);
     border-radius: 0.5rem;
     background-color: var(--shape-button);
 
