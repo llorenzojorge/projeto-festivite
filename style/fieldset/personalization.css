@@ -2,7 +2,13 @@
     background-image: url(../../assets/icons/paintbrush-vertical.svg);
 }
 
-.personalization-inputs span {
+.personalization-inputs {
+    display: grid;
+    gap: 1.75rem;
+}
+
+.colors > span, 
+.theme > span {
     display: block;
     margin-bottom: 1rem;
     color: #FFF;
@@ -103,7 +109,7 @@
 }
 
 .theme > span {
-    margin-top: 1.75rem;
+    /* margin-top: 1.75rem; */
 }
 
 .theme-radio {
@@ -151,3 +157,78 @@
     }
 }
 
+.estilo-e-capa {
+    /* margin-top: 1.75rem; */
+}
+
+.estilo {
+    .button-toggle {
+        display: flex;
+        align-items: center;
+
+        .switch {
+            display: inline-block;
+            position: relative;
+            width: 4rem;
+            height: 2rem;
+
+            & input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            .circle-slider {
+                position: absolute;
+                inset: 0;
+
+                cursor: pointer;
+                background-color: var(--input-base);
+                border: 2px solid var(--input-stroke);
+                border-radius: 2.1rem;
+
+                -webkit-transition: .4s;
+                transition: .4s;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: calc(50% - 1.5rem/2);
+                    left: calc(25% - 1.5rem/2);
+                    width: 1.5rem;
+                    height: 1.5rem;
+
+                    background-color: var(--input-stroke);
+                    border-radius: 50%;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                }
+            }
+
+            input:checked + .circle-slider {
+                background-color: var(--brand-light);
+            }
+
+            input:checked + .circle-slider::before {
+                transition: .4s;
+                background-color: #F9F9F9;
+
+                -webkit-transform: translateX(125%);
+                -ms-transform: translateX(125%);
+                transform: translateX(125%);
+            }
+        }
+
+        .escuro-claro {
+            margin-left: 0.75rem;
+
+            &::before {
+                content: "Escuro";
+            }
+        }
+
+        &:has(input:checked) > .escuro-claro::before {
+            content: "Claro";
+        }
+    }
+}
