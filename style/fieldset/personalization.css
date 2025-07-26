@@ -108,10 +108,6 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.theme > span {
-    /* margin-top: 1.75rem; */
-}
-
 .theme-radio {
     position: relative;
     max-width: 8.4rem;
@@ -158,13 +154,17 @@
 }
 
 .estilo-e-capa {
-    /* margin-top: 1.75rem; */
+    display: flex;
+    gap: 1rem;
 }
 
 .estilo {
+    min-width: 11rem;
+
     .button-toggle {
         display: flex;
         align-items: center;
+        padding-block: .5rem;
 
         .switch {
             display: inline-block;
@@ -184,7 +184,7 @@
 
                 cursor: pointer;
                 background-color: var(--input-base);
-                border: 2px solid var(--input-stroke);
+                border: 1px solid var(--input-stroke);
                 border-radius: 2.1rem;
 
                 -webkit-transition: .4s;
@@ -221,6 +221,7 @@
 
         .escuro-claro {
             margin-left: 0.75rem;
+            color: var(--text-heading);
 
             &::before {
                 content: "Escuro";
@@ -231,4 +232,28 @@
             content: "Claro";
         }
     }
+}
+
+.capa {
+    /* min-width: 23rem; */
+
+    .dropzone {
+        display: inline-block;
+        position: relative;
+        height: 2.5rem;
+
+        input {
+            /* Esconde apenas o input, e nao a mensagem atrelada */
+            &::-webkit-file-upload-button {
+                visibility: hidden;
+            }
+        }
+
+    }
+}
+
+.estilo > span,
+.capa > span {
+    display: inline-block;
+    margin-bottom: .75rem;
 }
