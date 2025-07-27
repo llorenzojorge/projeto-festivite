@@ -16,7 +16,7 @@ aside {
         background-color: var(--shape-background);
         border: 1.25rem solid var(--shape-background);
         border-right: 0;
-        border-radius: 0.75rem 0 0 0.75rem; /*Unindo a borda do aside + main*/
+        border-radius: .75rem 0 0 .75rem; /*Unindo a borda do aside + main*/
 
         overflow: hidden;
         position: relative;
