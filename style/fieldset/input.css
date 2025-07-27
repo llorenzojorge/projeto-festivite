@@ -18,3 +18,9 @@ input:focus, textarea:focus {
     border-color: var(--brand-light);
     color: var(--text-heading);
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+

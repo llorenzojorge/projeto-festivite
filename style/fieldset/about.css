@@ -9,11 +9,6 @@
         &:focus {
             color: var(--text-heading);
         }
-
-        &::-webkit-calendar-picker-indicator {
-            display: none;
-            -webkit-appearance: none;
-        }
     }
 }
 

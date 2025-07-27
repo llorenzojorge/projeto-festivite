@@ -60,7 +60,7 @@
                                     </div>
                                 </div>
 
-                                <div class="flex gap-16" id="teste">
+                                <div class="flex gap-16">
                                     <div class="radio-wrapper flex-1">
                                         <label>Tipo</label>
                                         
@@ -269,14 +269,30 @@
                             </div>
                         </fieldset>
 
-                        <fieldset class="contact">
+                        <fieldset class="contact grid gap-24">
                             <div class="legend-title">
                                 <div class="img-legend"></div>
                                 <legend>Dados para contato</legend>
                             </div>
 
                             <div class="contact-inputs">
-                                
+                                <div class="input-wrapper">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                                </div>
+
+                                <div class="flex gap-16">
+                                    <div class="input-wrapper flex-1">
+                                        <label for="e-mail">E-mail</label>
+                                        <input type="email" id="e-mail" name="e-mail" placeholder="exemplo@email.com">
+                                    </div>
+    
+                                    <div class="input-wrapper flex-1">
+                                        <label for="telefone">Telefone</label>
+                                        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+                                    </div>
+                                </div>
+
                             </div>
                         </fieldset>
                     </form>
