@@ -235,7 +235,6 @@
 }
 
 .capa {
-    /* min-width: 23rem; */
     .input-dropzone {
         display: flex;
         align-items: center;
@@ -243,9 +242,9 @@
         padding-block: .25rem;
 
         .dropzone {
-            position: relative;
             display: flex;
             align-items: center;
+            min-width: 7.4rem;
             
             height: 2.5rem;
             padding-inline: .75rem;
@@ -258,24 +257,32 @@
                 font: 600 0.87rem var(--font-open-sans);
                 color: var(--text-heading);
             }
-    
-            input {
-                position: absolute;
-                inset: 0;
-                opacity: 0;
+
+            &:hover {
+                cursor: pointer;
+                background-color: var(--shape-hover);
             }
         }
-        
-        .arquivo-selecionado {
+
+        /* "Nenhum arquivo escolhido" */
+        input {
+            all: unset;
+            width: 100%;
+            
             font: var(--body-md);
             color: var(--input-placeholder);
+            white-space: nowrap;
+            
+            &:valid {
+                color: var(--text-body);
+            }
 
-            &::before {
-                content: "Nenhum arquivo selecionado";
+            /* Parte do INPUT que seleciona os arquivos*/
+            &::-webkit-file-upload-button {
+                display: none;
             }
         }
     }
-
 }
 
 .estilo > span,
