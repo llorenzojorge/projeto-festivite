@@ -19,10 +19,13 @@ input:focus, textarea:focus {
     color: var(--text-heading);
 }
 
+
+/* Removendo o ícone padrão de input date */
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 }
+
 
 /* Removendo CSS padrão do navegador ao utilizar dados salvos/preenchimento automático de formulário */
 input:-webkit-autofill {
@@ -30,4 +33,18 @@ input:-webkit-autofill {
     box-shadow: 0 0 0 1000px var(--input-base) inset !important;
     
     transition: background-color 5000s ease-in-out 0s;
+}
+
+
+/* Configurando inputs com required + mensagem obrigatória */
+input:required {
+    border-color: var(--danger);
+}
+
+input:not(:focus):valid {
+    border-color: var(--input-stroke);
+}
+
+input:not(:focus):valid + .required-error {
+    display: none;
 }
