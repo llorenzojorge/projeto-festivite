@@ -236,20 +236,46 @@
 
 .capa {
     /* min-width: 23rem; */
+    .input-dropzone {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        padding-block: .25rem;
 
-    .dropzone {
-        display: inline-block;
-        position: relative;
-        height: 2.5rem;
-
-        input {
-            /* Esconde apenas o input, e nao a mensagem atrelada */
-            &::-webkit-file-upload-button {
-                visibility: hidden;
+        .dropzone {
+            position: relative;
+            display: flex;
+            align-items: center;
+            
+            height: 2.5rem;
+            padding-inline: .75rem;
+            gap: .5rem;
+    
+            background-color: var(--shape-button);
+            border-radius: .5rem;
+    
+            span {
+                font: 600 0.87rem var(--font-open-sans);
+                color: var(--text-heading);
+            }
+    
+            input {
+                position: absolute;
+                inset: 0;
+                opacity: 0;
             }
         }
+        
+        .arquivo-selecionado {
+            font: var(--body-md);
+            color: var(--input-placeholder);
 
+            &::before {
+                content: "Nenhum arquivo selecionado";
+            }
+        }
     }
+
 }
 
 .estilo > span,
