@@ -24,6 +24,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-appearance: none;
 }
 
+/* Removendo CSS padrão do navegador ao utilizar dados salvos/preenchimento automático de formulário */
 input:-webkit-autofill {
     -webkit-text-fill-color: var(--text-body);
     box-shadow: 0 0 0 1000px var(--input-base) inset !important;

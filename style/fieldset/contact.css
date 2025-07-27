@@ -1,3 +1,8 @@
 .contact .img-legend {
     background-image: url(../../assets/icons/contact.svg);
 }
+
+.contact-inputs {
+    display: grid;
+    gap: 1rem;
+}
