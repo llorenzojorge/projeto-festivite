@@ -4,10 +4,15 @@ footer {
 }
 
 .footer-items {
+    display: grid;
+    gap: .25rem;
+
     .checkbox-wrapper {
         position: relative;
         display: flex;
         align-items: center;
+        gap: .75rem;
+        padding-block: .25rem;
 
         .checkbox-image {
             background-image: url(../../assets/icons/checkbox-default.svg);
@@ -15,10 +20,22 @@ footer {
             height: 1.25rem;
         }
 
-        input {
+        input[type="checkbox"] {
             position: absolute;
             inset: 0;
-            all: unset;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        strong {
+            color: var(--brand-light);
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        &:has(:checked) .checkbox-image {
+            background-image: url(../../assets/icons/checkbox-checked.svg);
+            transition: .3s ease;
         }
     }
 }
