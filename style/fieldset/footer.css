@@ -39,3 +39,30 @@ footer {
         }
     }
 }
+
+.footer-button {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+
+    button[type="submit"] {
+        all: unset;
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+
+        color: var(--text-heading);
+        font: var(--body-md);
+        font-weight: 600;
+        
+        cursor: pointer;
+        padding: 0.8rem 1.25rem;
+        border-radius: .5rem;   
+        background-color: var(--brand-dark);
+        
+        &:hover {
+            transition: .3s ease;
+            box-shadow: 0 0 4px 2px hsla(208, 73%, 41%, 0.301);
+        }
+    }
+}
