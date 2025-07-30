@@ -33,7 +33,6 @@ aside {
             position: absolute;
             inset: 0;
             z-index: -1;
-            
         }
 
         & .title {
@@ -58,21 +57,26 @@ aside {
 }
 
 main {
-    overflow: auto;
-
     & #main-container {
         max-width: 51.25rem;
+        max-height: 45.5rem;
+        overflow: auto;
 
-        background-color: var(--shape-background);
-        border: 1.25rem solid var(--shape-background);
-        border-radius: 0 0.75rem 0.75rem 0.75rem; /*Unindo a borda do main + aside*/
-
+        border-top-right-radius: .75rem;
+        border-bottom-right-radius: .75rem;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
         & .main-content {
             max-width: 51.25rem;
             padding: 5rem 8.1rem;
-
+            
+            border: 1.25rem solid var(--shape-background);
             background-color: var(--shape-body);
-            border-radius: 0.75rem;
+            /* ajustar essa borda */
+            /* border-radius: 0.75rem; */
         }
 
         & header h1 {
