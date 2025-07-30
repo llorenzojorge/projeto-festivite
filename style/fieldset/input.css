@@ -1,5 +1,12 @@
-input, textarea {
+input {
     all: unset;
+}
+
+textarea {
+    appearance: none;
+}
+
+input, textarea {
     box-sizing: border-box;
     font: var(--body-md);
     padding: 0.8rem 1rem;
@@ -8,6 +15,7 @@ input, textarea {
     background-color: var(--input-base);
     border: 1px solid var(--input-stroke);
     border-radius: 0.5rem;
+    outline: none;
 
     &::placeholder {
         color: var(--input-placeholder);
