@@ -8,10 +8,11 @@ textarea {
 
 input, textarea {
     box-sizing: border-box;
-    font: var(--body-md);
     padding: 0.8rem 1rem;
     width: 100%;
-
+    
+    color: var(--text-body);
+    font: var(--body-md);
     background-color: var(--input-base);
     border: 1px solid var(--input-stroke);
     border-radius: 0.5rem;
